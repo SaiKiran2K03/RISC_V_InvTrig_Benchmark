@@ -1,0 +1,16 @@
+==============================
+Hijacked Node: node43.sharanga.local
+==============================
+Java : NOT FOUND
+RARS : /home/adas/Sai/risc_benchmarks/rars.jar (found)
+
+ERROR: java not found. Set JAVA_BIN=/path/to/java or load java module.
+[02:10:31] ============================================================
+[02:10:31] RISC-V Benchmark Runner
+[02:10:31] Java : NOT FOUND
+[02:10:31] RARS : /home/adas/Sai/risc_benchmarks/rars.jar
+[02:10:31] Points/file: 200
+[02:10:31] ============================================================
+[02:10:31] FATAL: java not found. Load java module or set JAVA_BIN env var.
+[02:10:31]   e.g.  module load java/17
+[02:10:31]   e.g.  export JAVA_BIN=$(which java)

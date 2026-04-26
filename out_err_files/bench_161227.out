@@ -1,0 +1,143 @@
+==============================
+Hijacked Node : node43.sharanga.local
+Using Java at : /home/adas/miniconda3/envs/gz2/bin/java
+Java Version  : openjdk version "1.8.0_472"
+==============================
+Java : /home/adas/miniconda3/envs/gz2/bin/java
+RARS : /home/adas/Sai/risc_benchmarks/rars.jar (found)
+
+X Value  | Algorithm      | Function |   Expected |     Actual | Status
+-------------------------------------------------------------------------------------
+-0.9000  | chebyshev      | arccos   |   2.690566 |   2.676727 | FAIL (1.38e-02)
+-0.5000  | chebyshev      | arccos   |   2.094395 |   2.094392 | PASS
+0.0000   | chebyshev      | arccos   |   1.570796 |   1.570796 | PASS
+0.5000   | chebyshev      | arccos   |   1.047198 |   1.047200 | PASS
+0.9000   | chebyshev      | arccos   |   0.451027 |   0.464866 | FAIL (1.38e-02)
+-0.9000  | cordic         | arccos   |   2.690566 |   2.690567 | PASS
+-0.5000  | cordic         | arccos   |   2.094395 |   2.094395 | PASS
+0.0000   | cordic         | arccos   |   1.570796 |   1.570797 | PASS
+0.5000   | cordic         | arccos   |   1.047198 |   1.047197 | PASS
+0.9000   | cordic         | arccos   |   0.451027 |   0.451026 | PASS
+-0.9000  | minimax        | arccos   |   2.690566 |   2.691924 | FAIL (1.36e-03)
+-0.5000  | minimax        | arccos   |   2.094395 |   2.083789 | FAIL (1.06e-02)
+0.0000   | minimax        | arccos   |   1.570796 |   1.570796 | PASS
+0.5000   | minimax        | arccos   |   1.047198 |   1.057804 | FAIL (1.06e-02)
+0.9000   | minimax        | arccos   |   0.451027 |   0.449669 | FAIL (1.36e-03)
+-0.9000  | newton         | arccos   |   2.690566 |   2.690583 | PASS
+-0.5000  | newton         | arccos   |   2.094395 |   2.094395 | PASS
+0.0000   | newton         | arccos   |   1.570796 |   1.570796 | PASS
+0.5000   | newton         | arccos   |   1.047198 |   1.047198 | PASS
+0.9000   | newton         | arccos   |   0.451027 |   0.451010 | PASS
+-0.9000  | ramirez        | arccos   |   2.690566 |   2.690550 | PASS
+-0.5000  | ramirez        | arccos   |   2.094395 |   2.094441 | PASS
+0.0000   | ramirez        | arccos   |   1.570796 |   1.570729 | PASS
+0.5000   | ramirez        | arccos   |   1.047198 |   1.047151 | PASS
+0.9000   | ramirez        | arccos   |   0.451027 |   0.451043 | PASS
+-0.9000  | taylor         | arccos   |   2.690566 |   2.690566 | PASS
+-0.5000  | taylor         | arccos   |   2.094395 |   2.094395 | PASS
+0.0000   | taylor         | arccos   |   1.570796 |   1.570796 | PASS
+0.5000   | taylor         | arccos   |   1.047198 |   1.047198 | PASS
+0.9000   | taylor         | arccos   |   0.451027 |   0.451027 | PASS
+-0.9000  | chebyshev      | arcsin   |  -1.119770 |  -1.105930 | FAIL (1.38e-02)
+-0.5000  | chebyshev      | arcsin   |  -0.523599 |  -0.523596 | PASS
+0.0000   | chebyshev      | arcsin   |   0.000000 |   0.000000 | PASS
+0.5000   | chebyshev      | arcsin   |   0.523599 |   0.523596 | PASS
+0.9000   | chebyshev      | arcsin   |   1.119770 |   1.105930 | FAIL (1.38e-02)
+-0.9000  | cordic         | arcsin   |  -1.119770 |  -1.119770 | PASS
+-0.5000  | cordic         | arcsin   |  -0.523599 |  -0.523599 | PASS
+0.0000   | cordic         | arcsin   |   0.000000 |  -0.000001 | PASS
+0.5000   | cordic         | arcsin   |   0.523599 |   0.523599 | PASS
+0.9000   | cordic         | arcsin   |   1.119770 |   1.119770 | PASS
+-0.9000  | minimax        | arcsin   |  -1.119770 |  -1.121127 | FAIL (1.36e-03)
+-0.5000  | minimax        | arcsin   |  -0.523599 |  -0.512992 | FAIL (1.06e-02)
+0.0000   | minimax        | arcsin   |   0.000000 |   0.000000 | PASS
+0.5000   | minimax        | arcsin   |   0.523599 |   0.512992 | FAIL (1.06e-02)
+0.9000   | minimax        | arcsin   |   1.119770 |   1.121127 | FAIL (1.36e-03)
+-0.9000  | newton         | arcsin   |  -1.119770 |  -1.119787 | PASS
+-0.5000  | newton         | arcsin   |  -0.523599 |  -0.523599 | PASS
+0.0000   | newton         | arcsin   |   0.000000 |   0.000000 | PASS
+0.5000   | newton         | arcsin   |   0.523599 |   0.523599 | PASS
+0.9000   | newton         | arcsin   |   1.119770 |   1.119787 | PASS
+-0.9000  | ramirez        | arcsin   |  -1.119770 |  -1.119753 | PASS
+-0.5000  | ramirez        | arcsin   |  -0.523599 |  -0.523645 | PASS
+0.0000   | ramirez        | arcsin   |   0.000000 |   0.000068 | PASS
+0.5000   | ramirez        | arcsin   |   0.523599 |   0.523645 | PASS
+0.9000   | ramirez        | arcsin   |   1.119770 |   1.119753 | PASS
+-0.9000  | taylor         | arcsin   |  -1.119770 |  -1.119770 | PASS
+-0.5000  | taylor         | arcsin   |  -0.523599 |  -0.523599 | PASS
+0.0000   | taylor         | arcsin   |   0.000000 |   0.000000 | PASS
+0.5000   | taylor         | arcsin   |   0.523599 |   0.523599 | PASS
+0.9000   | taylor         | arcsin   |   1.119770 |   1.119770 | PASS
+-------------------------------------------------------------------------------------
+
+Summary: 48/60 PASS | 12 FAIL (expected) | 0 ERROR
+✓ No errors — ready for full benchmark.
+[02:17:33] ============================================================
+[02:17:33] RISC-V Benchmark Runner
+[02:17:33] Java : /home/adas/miniconda3/envs/gz2/bin/java
+[02:17:33] RARS : /home/adas/Sai/risc_benchmarks/rars.jar
+[02:17:33] Points/file: 200
+[02:17:33] ============================================================
+[02:17:33] Smoke-testing RARS...
+[02:17:33]   java -version: openjdk version "1.8.0_472"
+OpenJDK Runtime Environment (Zulu 8.90.0.19-CA-linux
+[02:17:33] Found 12 ASM files.
+[02:17:33] Pipe test (arcsin_taylor.asm x=0.5)...
+[02:17:33]   Pipe test OK → 0.523599  (expected ~0.523599)
+[02:17:33]   Using RARS flags: 'nc sm'
+[02:17:33] 
+>>> arccos_chebyshev.asm
+[02:18:40]   Done. 200/200 ok | 0 errors
+[02:18:40] 
+>>> arccos_cordic.asm
+[02:19:48]   Done. 200/200 ok | 0 errors
+[02:19:48] 
+>>> arccos_minimax.asm
+[02:20:56]   Done. 200/200 ok | 0 errors
+[02:20:56] 
+>>> arccos_newton.asm
+[02:22:03]   Done. 200/200 ok | 0 errors
+[02:22:03] 
+>>> arccos_ramirez.asm
+[02:23:09]   Done. 200/200 ok | 0 errors
+[02:23:09] 
+>>> arccos_taylor.asm
+[02:24:17]   Done. 200/200 ok | 0 errors
+[02:24:17] 
+>>> arcsin_chebyshev.asm
+[02:25:24]   Done. 200/200 ok | 0 errors
+[02:25:24] 
+>>> arcsin_cordic.asm
+[02:26:30]   Done. 200/200 ok | 0 errors
+[02:26:30] 
+>>> arcsin_minimax.asm
+[02:27:36]   Done. 200/200 ok | 0 errors
+[02:27:36] 
+>>> arcsin_newton.asm
+[02:28:44]   Done. 200/200 ok | 0 errors
+[02:28:44] 
+>>> arcsin_ramirez.asm
+[02:29:50]   Done. 200/200 ok | 0 errors
+[02:29:50] 
+>>> arcsin_taylor.asm
+[02:30:57]   Done. 200/200 ok | 0 errors
+[02:30:57] 
+Raw data → benchmark_results.json
+[02:30:57] 
+========================================================================
+[02:30:57] File                             |  Pts |   Mean Err |    Max Err |  Pass%
+[02:30:57] ------------------------------------------------------------------------
+[02:30:57] arccos_chebyshev.asm             |  200 |   5.28e-03 |   1.17e-01 |  65.0%
+[02:30:57] arccos_cordic.asm                |  200 |   6.30e-03 |   9.63e-02 |  86.0%
+[02:30:57] arccos_minimax.asm               |  200 |   5.00e-03 |   2.10e-02 |  13.0%
+[02:30:57] arccos_newton.asm                |  200 |   1.25e-05 |   4.80e-04 |  97.0%
+[02:30:57] arccos_ramirez.asm               |  200 |   2.86e-05 |   6.31e-05 | 100.0%
+[02:30:57] arccos_taylor.asm                |  200 |   1.25e-05 |   1.15e-03 |  99.0%
+[02:30:57] arcsin_chebyshev.asm             |  200 |   5.28e-03 |   1.17e-01 |  65.0%
+[02:30:57] arcsin_cordic.asm                |  200 |   6.30e-03 |   9.63e-02 |  86.0%
+[02:30:57] arcsin_minimax.asm               |  200 |   5.00e-03 |   2.10e-02 |  13.0%
+[02:30:57] arcsin_newton.asm                |  200 |   1.25e-05 |   4.80e-04 |  97.0%
+[02:30:57] arcsin_ramirez.asm               |  200 |   2.86e-05 |   6.31e-05 | 100.0%
+[02:30:57] arcsin_taylor.asm                |  200 |   1.25e-05 |   1.15e-03 |  99.0%
+[02:30:57] ========================================================================
+[02:30:57] Plot saved → benchmark_results.png

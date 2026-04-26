@@ -1,0 +1,8 @@
+==============================
+Hijacked Node: node43.sharanga.local
+Using Java at: 
+==============================
+Java : NOT FOUND
+RARS : /home/adas/Sai/risc_benchmarks/rars.jar (found)
+
+ERROR: java not found. Set JAVA_BIN=/path/to/java or load java module.

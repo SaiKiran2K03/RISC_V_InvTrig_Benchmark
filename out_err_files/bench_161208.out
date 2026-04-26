@@ -1,0 +1,321 @@
+==============================
+Job started: Sun Apr 26 01:43:12 IST 2026
+Working dir: /home/adas/Sai/risc_benchmarks
+Node: node43.sharanga.local
+==============================
+
+--- SANITY CHECK ---
+X Value  | Algorithm      | Function |   Expected |     Actual | Status
+-------------------------------------------------------------------------------------
+-0.9000  | chebyshev      | arccos   |   2.690566 |        N/A | ERROR
+-0.5000  | chebyshev      | arccos   |   2.094395 |        N/A | ERROR
+0.0000   | chebyshev      | arccos   |   1.570796 |        N/A | ERROR
+0.5000   | chebyshev      | arccos   |   1.047198 |        N/A | ERROR
+0.9000   | chebyshev      | arccos   |   0.451027 |        N/A | ERROR
+-0.9000  | cordic         | arccos   |   2.690566 |        N/A | ERROR
+-0.5000  | cordic         | arccos   |   2.094395 |        N/A | ERROR
+0.0000   | cordic         | arccos   |   1.570796 |        N/A | ERROR
+0.5000   | cordic         | arccos   |   1.047198 |        N/A | ERROR
+0.9000   | cordic         | arccos   |   0.451027 |        N/A | ERROR
+-0.9000  | minimax        | arccos   |   2.690566 |        N/A | ERROR
+-0.5000  | minimax        | arccos   |   2.094395 |        N/A | ERROR
+0.0000   | minimax        | arccos   |   1.570796 |        N/A | ERROR
+0.5000   | minimax        | arccos   |   1.047198 |        N/A | ERROR
+0.9000   | minimax        | arccos   |   0.451027 |        N/A | ERROR
+-0.9000  | newton         | arccos   |   2.690566 |        N/A | ERROR
+-0.5000  | newton         | arccos   |   2.094395 |        N/A | ERROR
+0.0000   | newton         | arccos   |   1.570796 |        N/A | ERROR
+0.5000   | newton         | arccos   |   1.047198 |        N/A | ERROR
+0.9000   | newton         | arccos   |   0.451027 |        N/A | ERROR
+-0.9000  | ramirez        | arccos   |   2.690566 |        N/A | ERROR
+-0.5000  | ramirez        | arccos   |   2.094395 |        N/A | ERROR
+0.0000   | ramirez        | arccos   |   1.570796 |        N/A | ERROR
+0.5000   | ramirez        | arccos   |   1.047198 |        N/A | ERROR
+0.9000   | ramirez        | arccos   |   0.451027 |        N/A | ERROR
+-0.9000  | taylor         | arccos   |   2.690566 |        N/A | ERROR
+-0.5000  | taylor         | arccos   |   2.094395 |        N/A | ERROR
+0.0000   | taylor         | arccos   |   1.570796 |        N/A | ERROR
+0.5000   | taylor         | arccos   |   1.047198 |        N/A | ERROR
+0.9000   | taylor         | arccos   |   0.451027 |        N/A | ERROR
+-0.9000  | chebyshev      | arcsin   |  -1.119770 |        N/A | ERROR
+-0.5000  | chebyshev      | arcsin   |  -0.523599 |        N/A | ERROR
+0.0000   | chebyshev      | arcsin   |   0.000000 |        N/A | ERROR
+0.5000   | chebyshev      | arcsin   |   0.523599 |        N/A | ERROR
+0.9000   | chebyshev      | arcsin   |   1.119770 |        N/A | ERROR
+-0.9000  | cordic         | arcsin   |  -1.119770 |        N/A | ERROR
+-0.5000  | cordic         | arcsin   |  -0.523599 |        N/A | ERROR
+0.0000   | cordic         | arcsin   |   0.000000 |        N/A | ERROR
+0.5000   | cordic         | arcsin   |   0.523599 |        N/A | ERROR
+0.9000   | cordic         | arcsin   |   1.119770 |        N/A | ERROR
+-0.9000  | minimax        | arcsin   |  -1.119770 |        N/A | ERROR
+-0.5000  | minimax        | arcsin   |  -0.523599 |        N/A | ERROR
+0.0000   | minimax        | arcsin   |   0.000000 |        N/A | ERROR
+0.5000   | minimax        | arcsin   |   0.523599 |        N/A | ERROR
+0.9000   | minimax        | arcsin   |   1.119770 |        N/A | ERROR
+-0.9000  | newton         | arcsin   |  -1.119770 |        N/A | ERROR
+-0.5000  | newton         | arcsin   |  -0.523599 |        N/A | ERROR
+0.0000   | newton         | arcsin   |   0.000000 |        N/A | ERROR
+0.5000   | newton         | arcsin   |   0.523599 |        N/A | ERROR
+0.9000   | newton         | arcsin   |   1.119770 |        N/A | ERROR
+-0.9000  | ramirez        | arcsin   |  -1.119770 |        N/A | ERROR
+-0.5000  | ramirez        | arcsin   |  -0.523599 |        N/A | ERROR
+0.0000   | ramirez        | arcsin   |   0.000000 |        N/A | ERROR
+0.5000   | ramirez        | arcsin   |   0.523599 |        N/A | ERROR
+0.9000   | ramirez        | arcsin   |   1.119770 |        N/A | ERROR
+-0.9000  | taylor         | arcsin   |  -1.119770 |        N/A | ERROR
+-0.5000  | taylor         | arcsin   |  -0.523599 |        N/A | ERROR
+0.0000   | taylor         | arcsin   |   0.000000 |        N/A | ERROR
+0.5000   | taylor         | arcsin   |   0.523599 |        N/A | ERROR
+0.9000   | taylor         | arcsin   |   1.119770 |        N/A | ERROR
+-------------------------------------------------------------------------------------
+
+Summary: 0/60 PASS  |  0 FAIL  |  60 ERROR
+✗ Fix failing tests before running the full benchmark.
+
+--- FULL BENCHMARK ---
+[01:45:06] ============================================================
+[01:45:06] RISC-V Benchmark Runner
+[01:45:06] RARS: /home/adas/Sai/risc_benchmarks/rars.jar
+[01:45:06] Points per file: 200
+[01:45:06] ============================================================
+[01:45:06] Found 12 ASM files: ['arccos_chebyshev.asm', 'arccos_cordic.asm', 'arccos_minimax.asm', 'arccos_newton.asm', 'arccos_ramirez.asm', 'arccos_taylor.asm', 'arcsin_chebyshev.asm', 'arcsin_cordic.asm', 'arcsin_minimax.asm', 'arcsin_newton.asm', 'arcsin_ramirez.asm', 'arcsin_taylor.asm']
+[01:45:06] 
+>>> arccos_chebyshev.asm
+[01:45:06]   [TIMEOUT/EMPTY] x=-0.9900
+[01:45:06]   [TIMEOUT/EMPTY] x=-0.9801
+[01:45:06]   [TIMEOUT/EMPTY] x=-0.9701
+[01:45:06]   [TIMEOUT/EMPTY] x=-0.9602
+[01:45:06]   [TIMEOUT/EMPTY] x=-0.9502
+[01:45:06]   [TIMEOUT/EMPTY] x=-0.8010
+[01:45:07]   [TIMEOUT/EMPTY] x=-0.6020
+[01:45:07]   [TIMEOUT/EMPTY] x=-0.4030
+[01:45:07]   [TIMEOUT/EMPTY] x=-0.2040
+[01:45:07]   [TIMEOUT/EMPTY] x=-0.0050
+[01:45:08]   [TIMEOUT/EMPTY] x=0.1940
+[01:45:08]   [TIMEOUT/EMPTY] x=0.3930
+[01:45:08]   [TIMEOUT/EMPTY] x=0.5920
+[01:45:08]   [TIMEOUT/EMPTY] x=0.7910
+[01:45:08]   [TIMEOUT/EMPTY] x=0.9900
+[01:45:08]   Done. 0/200 points OK, 200 errors.
+[01:45:08] 
+>>> arccos_cordic.asm
+[01:45:08]   [TIMEOUT/EMPTY] x=-0.9900
+[01:45:08]   [TIMEOUT/EMPTY] x=-0.9801
+[01:45:08]   [TIMEOUT/EMPTY] x=-0.9701
+[01:45:08]   [TIMEOUT/EMPTY] x=-0.9602
+[01:45:08]   [TIMEOUT/EMPTY] x=-0.9502
+[01:45:08]   [TIMEOUT/EMPTY] x=-0.8010
+[01:45:08]   [TIMEOUT/EMPTY] x=-0.6020
+[01:45:08]   [TIMEOUT/EMPTY] x=-0.4030
+[01:45:08]   [TIMEOUT/EMPTY] x=-0.2040
+[01:45:08]   [TIMEOUT/EMPTY] x=-0.0050
+[01:45:08]   [TIMEOUT/EMPTY] x=0.1940
+[01:45:08]   [TIMEOUT/EMPTY] x=0.3930
+[01:45:08]   [TIMEOUT/EMPTY] x=0.5920
+[01:45:08]   [TIMEOUT/EMPTY] x=0.7910
+[01:45:08]   [TIMEOUT/EMPTY] x=0.9900
+[01:45:08]   Done. 0/200 points OK, 200 errors.
+[01:45:08] 
+>>> arccos_minimax.asm
+[01:45:08]   [TIMEOUT/EMPTY] x=-0.9900
+[01:45:08]   [TIMEOUT/EMPTY] x=-0.9801
+[01:45:08]   [TIMEOUT/EMPTY] x=-0.9701
+[01:45:08]   [TIMEOUT/EMPTY] x=-0.9602
+[01:45:08]   [TIMEOUT/EMPTY] x=-0.9502
+[01:45:08]   [TIMEOUT/EMPTY] x=-0.8010
+[01:45:08]   [TIMEOUT/EMPTY] x=-0.6020
+[01:45:08]   [TIMEOUT/EMPTY] x=-0.4030
+[01:45:08]   [TIMEOUT/EMPTY] x=-0.2040
+[01:45:08]   [TIMEOUT/EMPTY] x=-0.0050
+[01:45:08]   [TIMEOUT/EMPTY] x=0.1940
+[01:45:08]   [TIMEOUT/EMPTY] x=0.3930
+[01:45:08]   [TIMEOUT/EMPTY] x=0.5920
+[01:45:08]   [TIMEOUT/EMPTY] x=0.7910
+[01:45:08]   [TIMEOUT/EMPTY] x=0.9900
+[01:45:08]   Done. 0/200 points OK, 200 errors.
+[01:45:08] 
+>>> arccos_newton.asm
+[01:45:08]   [TIMEOUT/EMPTY] x=-0.9900
+[01:45:08]   [TIMEOUT/EMPTY] x=-0.9801
+[01:45:08]   [TIMEOUT/EMPTY] x=-0.9701
+[01:45:08]   [TIMEOUT/EMPTY] x=-0.9602
+[01:45:08]   [TIMEOUT/EMPTY] x=-0.9502
+[01:45:08]   [TIMEOUT/EMPTY] x=-0.8010
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.6020
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.4030
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.2040
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.0050
+[01:45:09]   [TIMEOUT/EMPTY] x=0.1940
+[01:45:09]   [TIMEOUT/EMPTY] x=0.3930
+[01:45:09]   [TIMEOUT/EMPTY] x=0.5920
+[01:45:09]   [TIMEOUT/EMPTY] x=0.7910
+[01:45:09]   [TIMEOUT/EMPTY] x=0.9900
+[01:45:09]   Done. 0/200 points OK, 200 errors.
+[01:45:09] 
+>>> arccos_ramirez.asm
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.9900
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.9801
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.9701
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.9602
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.9502
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.8010
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.6020
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.4030
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.2040
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.0050
+[01:45:09]   [TIMEOUT/EMPTY] x=0.1940
+[01:45:09]   [TIMEOUT/EMPTY] x=0.3930
+[01:45:09]   [TIMEOUT/EMPTY] x=0.5920
+[01:45:09]   [TIMEOUT/EMPTY] x=0.7910
+[01:45:09]   [TIMEOUT/EMPTY] x=0.9900
+[01:45:09]   Done. 0/200 points OK, 200 errors.
+[01:45:09] 
+>>> arccos_taylor.asm
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.9900
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.9801
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.9701
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.9602
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.9502
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.8010
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.6020
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.4030
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.2040
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.0050
+[01:45:09]   [TIMEOUT/EMPTY] x=0.1940
+[01:45:09]   [TIMEOUT/EMPTY] x=0.3930
+[01:45:09]   [TIMEOUT/EMPTY] x=0.5920
+[01:45:09]   [TIMEOUT/EMPTY] x=0.7910
+[01:45:09]   [TIMEOUT/EMPTY] x=0.9900
+[01:45:09]   Done. 0/200 points OK, 200 errors.
+[01:45:09] 
+>>> arcsin_chebyshev.asm
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.9900
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.9801
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.9701
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.9602
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.9502
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.8010
+[01:45:09]   [TIMEOUT/EMPTY] x=-0.6020
+[01:45:10]   [TIMEOUT/EMPTY] x=-0.4030
+[01:45:10]   [TIMEOUT/EMPTY] x=-0.2040
+[01:45:10]   [TIMEOUT/EMPTY] x=-0.0050
+[01:45:10]   [TIMEOUT/EMPTY] x=0.1940
+[01:45:10]   [TIMEOUT/EMPTY] x=0.3930
+[01:45:10]   [TIMEOUT/EMPTY] x=0.5920
+[01:45:10]   [TIMEOUT/EMPTY] x=0.7910
+[01:45:10]   [TIMEOUT/EMPTY] x=0.9900
+[01:45:10]   Done. 0/200 points OK, 200 errors.
+[01:45:10] 
+>>> arcsin_cordic.asm
+[01:45:10]   [TIMEOUT/EMPTY] x=-0.9900
+[01:45:10]   [TIMEOUT/EMPTY] x=-0.9801
+[01:45:10]   [TIMEOUT/EMPTY] x=-0.9701
+[01:45:10]   [TIMEOUT/EMPTY] x=-0.9602
+[01:45:10]   [TIMEOUT/EMPTY] x=-0.9502
+[01:45:10]   [TIMEOUT/EMPTY] x=-0.8010
+[01:45:10]   [TIMEOUT/EMPTY] x=-0.6020
+[01:45:10]   [TIMEOUT/EMPTY] x=-0.4030
+[01:45:10]   [TIMEOUT/EMPTY] x=-0.2040
+[01:45:10]   [TIMEOUT/EMPTY] x=-0.0050
+[01:45:10]   [TIMEOUT/EMPTY] x=0.1940
+[01:45:10]   [TIMEOUT/EMPTY] x=0.3930
+[01:45:10]   [TIMEOUT/EMPTY] x=0.5920
+[01:45:10]   [TIMEOUT/EMPTY] x=0.7910
+[01:45:10]   [TIMEOUT/EMPTY] x=0.9900
+[01:45:10]   Done. 0/200 points OK, 200 errors.
+[01:45:10] 
+>>> arcsin_minimax.asm
+[01:45:10]   [TIMEOUT/EMPTY] x=-0.9900
+[01:45:10]   [TIMEOUT/EMPTY] x=-0.9801
+[01:45:10]   [TIMEOUT/EMPTY] x=-0.9701
+[01:45:10]   [TIMEOUT/EMPTY] x=-0.9602
+[01:45:10]   [TIMEOUT/EMPTY] x=-0.9502
+[01:45:10]   [TIMEOUT/EMPTY] x=-0.8010
+[01:45:10]   [TIMEOUT/EMPTY] x=-0.6020
+[01:45:10]   [TIMEOUT/EMPTY] x=-0.4030
+[01:45:10]   [TIMEOUT/EMPTY] x=-0.2040
+[01:45:10]   [TIMEOUT/EMPTY] x=-0.0050
+[01:45:10]   [TIMEOUT/EMPTY] x=0.1940
+[01:45:10]   [TIMEOUT/EMPTY] x=0.3930
+[01:45:10]   [TIMEOUT/EMPTY] x=0.5920
+[01:45:10]   [TIMEOUT/EMPTY] x=0.7910
+[01:45:11]   [TIMEOUT/EMPTY] x=0.9900
+[01:45:11]   Done. 0/200 points OK, 200 errors.
+[01:45:11] 
+>>> arcsin_newton.asm
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.9900
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.9801
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.9701
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.9602
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.9502
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.8010
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.6020
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.4030
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.2040
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.0050
+[01:45:11]   [TIMEOUT/EMPTY] x=0.1940
+[01:45:11]   [TIMEOUT/EMPTY] x=0.3930
+[01:45:11]   [TIMEOUT/EMPTY] x=0.5920
+[01:45:11]   [TIMEOUT/EMPTY] x=0.7910
+[01:45:11]   [TIMEOUT/EMPTY] x=0.9900
+[01:45:11]   Done. 0/200 points OK, 200 errors.
+[01:45:11] 
+>>> arcsin_ramirez.asm
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.9900
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.9801
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.9701
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.9602
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.9502
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.8010
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.6020
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.4030
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.2040
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.0050
+[01:45:11]   [TIMEOUT/EMPTY] x=0.1940
+[01:45:11]   [TIMEOUT/EMPTY] x=0.3930
+[01:45:11]   [TIMEOUT/EMPTY] x=0.5920
+[01:45:11]   [TIMEOUT/EMPTY] x=0.7910
+[01:45:11]   [TIMEOUT/EMPTY] x=0.9900
+[01:45:11]   Done. 0/200 points OK, 200 errors.
+[01:45:11] 
+>>> arcsin_taylor.asm
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.9900
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.9801
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.9701
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.9602
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.9502
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.8010
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.6020
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.4030
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.2040
+[01:45:11]   [TIMEOUT/EMPTY] x=-0.0050
+[01:45:11]   [TIMEOUT/EMPTY] x=0.1940
+[01:45:11]   [TIMEOUT/EMPTY] x=0.3930
+[01:45:11]   [TIMEOUT/EMPTY] x=0.5920
+[01:45:12]   [TIMEOUT/EMPTY] x=0.7910
+[01:45:12]   [TIMEOUT/EMPTY] x=0.9900
+[01:45:12]   Done. 0/200 points OK, 200 errors.
+[01:45:12] 
+Raw data → benchmark_results.json
+[01:45:12] 
+======================================================================
+[01:45:12] File                           | Points |   Mean Err |    Max Err |  Pass%
+[01:45:12] ----------------------------------------------------------------------
+[01:45:12] arccos_chebyshev.asm           |    --- |        --- |        --- |    ---
+[01:45:12] arccos_cordic.asm              |    --- |        --- |        --- |    ---
+[01:45:12] arccos_minimax.asm             |    --- |        --- |        --- |    ---
+[01:45:12] arccos_newton.asm              |    --- |        --- |        --- |    ---
+[01:45:12] arccos_ramirez.asm             |    --- |        --- |        --- |    ---
+[01:45:12] arccos_taylor.asm              |    --- |        --- |        --- |    ---
+[01:45:12] arcsin_chebyshev.asm           |    --- |        --- |        --- |    ---
+[01:45:12] arcsin_cordic.asm              |    --- |        --- |        --- |    ---
+[01:45:12] arcsin_minimax.asm             |    --- |        --- |        --- |    ---
+[01:45:12] arcsin_newton.asm              |    --- |        --- |        --- |    ---
+[01:45:12] arcsin_ramirez.asm             |    --- |        --- |        --- |    ---
+[01:45:12] arcsin_taylor.asm              |    --- |        --- |        --- |    ---
+[01:45:12] ======================================================================
+[01:45:15] Plot saved → benchmark_results.png
+
+==============================
+Job finished: Sun Apr 26 01:45:16 IST 2026
+==============================

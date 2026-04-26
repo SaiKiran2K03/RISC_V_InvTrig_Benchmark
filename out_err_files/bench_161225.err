@@ -1,0 +1,5 @@
+/usr/bin/which: no java in (/usr/bin:/apps/spack/opt/spack/linux-rocky8-zen2/gcc-11.2.0/python-3.10.8-dlcmq7k72yzniebio5u2e57jc6uig7kd/bin:/home/adas/miniconda3/envs/gz2/bin:/home/adas/miniconda3/condabin:/home/adas/.local/bin:/home/adas/bin:/apps/spack/bin:/apps/spack-stable/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/apps/ngc)
+Traceback (most recent call last):
+  File "benchmark_runner.py", line 21, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
